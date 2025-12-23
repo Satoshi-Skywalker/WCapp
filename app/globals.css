@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+:root {
+  /* WeightCare Sleek Light Mode */
+  --background: #ffffff;
+  --foreground: #09090b;
+
+  --card: #ffffff;
+  --card-foreground: #09090b;
+
+  --popover: #ffffff;
+  --popover-foreground: #09090b;
+
+  --primary: #FEDE33;
+  --primary-foreground: #000000;
+
+  --secondary: #f4f4f5;
+  --secondary-foreground: #18181b;
+
+  --muted: #f4f4f5;
+  --muted-foreground: #71717a;
+
+  --accent: #f4f4f5;
+  --accent-foreground: #18181b;
+
+  --destructive: #ef4444;
+  --destructive-foreground: #fafafa;
+
+  --border: #e4e4e7;
+  --input: #e4e4e7;
+  --ring: #FEDE33;
+
+  --radius: 0.5rem;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+}
+
+.dark {
+  /* WeightCare Pro Black Theme */
+  --background: #000000;
+  --foreground: #ffffff;
+
+  --card: #000000;
+  --card-foreground: #ffffff;
+
+  --popover: #000000;
+  --popover-foreground: #ffffff;
+
+  --primary: #FEDE33;
+  --primary-foreground: #000000;
+
+  --secondary: #121212;
+  --secondary-foreground: #ffffff;
+
+  --muted: #121212;
+  --muted-foreground: #a1a1aa;
+
+  --accent: #121212;
+  --accent-foreground: #FEDE33;
+
+  --destructive: #7f1d1d;
+  --destructive-foreground: #ffffff;
+
+  --border: #333333;
+  --input: #333333;
+  --ring: #FEDE33;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Glassmorphism Utilities - Refined for Pro Look */
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  /* Sharper border for light mode */
+}
+
+.dark .glass {
+  background: rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(254, 222, 51, 0.15);
+  /* Subtle yellow tint on border */
+}
